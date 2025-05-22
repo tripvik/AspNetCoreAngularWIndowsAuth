@@ -1,4 +1,4 @@
-# .NET Angular Windows Authentication Demo
+# ASP.NET Core Angular App : Windows Authentication Demo
 
 A simple demonstration application showcasing Windows Authentication (Kerberos/NTLM) in a .NET Core backend with an Angular frontend for IIS.
 
