@@ -1,0 +1,153 @@
+:host {
+  max-width: 1280px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.page-container {
+  font-family: Arial, sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+.page-header {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+  .page-header h1 {
+    color: #2c3e50;
+    margin-top: 0;
+  }
+
+section {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+  section h2, section h3 {
+    margin-top: 0;
+    color: #34495e;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+  }
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.alert strong {
+  font-weight: bold;
+}
+
+.claims-container {
+  margin-top: 15px;
+}
+
+.claims-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.claim-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.claim-type {
+  font-weight: bold;
+  color: #555;
+  margin-right: 10px;
+}
+
+.claim-value {
+  color: #333;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #555;
+  background-color: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+}
+
+  .loading-message small {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .table th {
+    background-color: #eef1f3;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+
+  .table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+
+.text-center {
+  text-align: center;
+}

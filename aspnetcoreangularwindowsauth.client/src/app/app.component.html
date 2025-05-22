@@ -1,0 +1,62 @@
+<div class="page-container">
+  <header class="page-header">
+    <h1 id="tableLabel">Weather forecast</h1>
+    <p>This component demonstrates fetching data from the server and displaying user information.</p>
+  </header>
+
+  <section class="user-details-section">
+    <div *ngIf="userName" class="alert alert-success" role="alert">
+      Welcome, <strong>{{ userName }}</strong>!
+    </div>
+    <div *ngIf="userError" class="alert alert-danger" role="alert">
+      <strong>User Information Error:</strong> {{ userError }}
+    </div>
+
+    <div *ngIf="userClaims && userClaims.length > 0" class="claims-container">
+      <h3>User Claims</h3>
+      <ul class="claims-list">
+        <li *ngFor="let claim of userClaims" class="claim-item">
+          <span class="claim-type">{{ claim.type }}:</span>
+          <span class="claim-value">{{ claim.value }}</span>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="claimsError" class="alert alert-danger" role="alert">
+      <strong>Claims Error:</strong> {{ claimsError }}
+    </div>
+  </section>
+
+  <section class="forecast-section">
+    <h2>Forecast Data</h2>
+
+    <div *ngIf="forecasts === null" class="loading-message">
+      <p><em>Loading weather data...</em></p>
+      <small>Please ensure the ASP.NET backend is running. For more details, see <a href="https://aka.ms/jspsintegrationangular" target="_blank" rel="noopener noreferrer">ASP.NET Core integration with Angular</a>.</small>
+    </div>
+
+    <div *ngIf="forecasts && forecasts.length === 0" class="alert alert-info" role="alert">
+      No forecast data available at the moment.
+    </div>
+
+    <div *ngIf="forecasts && forecasts.length > 0" class="table-responsive">
+      <table class="table forecast-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Temp. (C)</th>
+            <th>Temp. (F)</th>
+            <th>Summary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let forecast of forecasts">
+            <td>{{ forecast.date | date:'shortDate' }}</td>
+            <td>{{ forecast.temperatureC }}&deg;C</td>
+            <td>{{ forecast.temperatureF }}&deg;F</td>
+            <td>{{ forecast.summary }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>

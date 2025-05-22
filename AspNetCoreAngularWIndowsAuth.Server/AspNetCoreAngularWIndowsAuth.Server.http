@@ -1,0 +1,6 @@
+@AspNetCoreAngularWIndowsAuth.Server_HostAddress = http://localhost:5158
+
+GET {{AspNetCoreAngularWIndowsAuth.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
